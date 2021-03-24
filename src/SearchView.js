@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class SearchView extends Component {
   render() {
     return (
-      <p>SearchView</p>
+      <div>
+        <Link to="/">
+          Close
+        </Link>
+        <p>SearchView</p>
+      </div>
     )
   }
 }
