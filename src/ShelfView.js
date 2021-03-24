@@ -10,9 +10,9 @@ class ShelfView extends Component {
           Search
         </Link>
         <p>ShelfView</p>
-        <Shelf/>
-        <Shelf/>
-        <Shelf/>
+        <Shelf bookList={['a', 'b', 'c', 'd']}/>
+        <Shelf bookList={['e', 'f', 'g', 'h']}/>
+        <Shelf bookList={['i', 'j', 'k', 'l']}/>
       </div>
     )
   }
