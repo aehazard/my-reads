@@ -10,9 +10,9 @@ class ShelfView extends Component {
           Search
         </Link>
         <p>ShelfView</p>
-        <Shelf bookList={['a', 'b', 'c', 'd']}/>
-        <Shelf bookList={['e', 'f', 'g', 'h']}/>
-        <Shelf bookList={['i', 'j', 'k', 'l']}/>
+        <Shelf shelfName={'currentlyReading'} bookList={this.props.bookList}/>
+        <Shelf shelfName={'wantToRead'} bookList={this.props.bookList}/>
+        <Shelf shelfName={'read'} bookList={this.props.bookList}/>
       </div>
     )
   }

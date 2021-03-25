@@ -9,6 +9,8 @@ class SearchView extends Component {
           Close
         </Link>
         <p>SearchView</p>
+        <input type='text' name='search' placeholder='Search'>
+        </input>
       </div>
     )
   }
