@@ -19,8 +19,18 @@ class App extends Component {
     })
   }
 
+  search = (query) => {
+    BooksAPI.search(query)
+    .then((books) => {
+      console.log('Books returned to App.js')
+      console.log(books)
+      this.setState(()=>({
+        books
+      }))
+    })
+  }
+
   render () {
-    console.log(this.state.books);
     return(
       <div>
         <Route exact path="/" render={() => (
@@ -28,7 +38,7 @@ class App extends Component {
           )}
         />
         <Route exact path="/search" render={({ history }) => (
-            <SearchView bookList={this.state.books}/>
+            <SearchView onSearch={this.search}/>
           )}
         />
       </div>
